@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+canvas {
+    display: block;
+}
+
+#matrix-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0; /* Lower z-index to place it below sections */
+}
+
+/* Add or modify styles for the sections */
+section {
+    margin: 20px auto; /* Center the sections horizontally and add top/bottom margin */
+    padding: 20px;
+    border: none;
+    position: relative;
+    z-index: 2; /* Ensure sections appear above the canvas */
+    max-width: 800px; /* Set a maximum width for responsiveness */
+    width: 90%; /* Set a width for responsiveness */
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 2em;
+    text-align: center;
+    width: 90%; /* Adjust width as needed for responsiveness */
+    z-index: 1; /* Ensure it's above the canvas */
+    opacity: 0.19;
+}
+
+/* styles for h2 title */
+h2 {
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* styles for h3 title */
+h3 {
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+p {
+    color: #FFD700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Add or modify styles for the centered list */
+nav {
+    text-align: center;
+}
+
+.centered-list {
+    list-style: none;
+    padding: 0;
+}
+
+.centered-list li {
+    display: inline-block;
+    margin: 0 10px;
+    color:#FFC107;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from the parent */
+    /* Add other styles as needed */
+}
